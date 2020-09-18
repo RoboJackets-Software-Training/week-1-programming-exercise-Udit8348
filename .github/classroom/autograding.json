@@ -1,0 +1,124 @@
+{
+  "tests": [
+    {
+      "name": "Exercise 1.0",
+      "setup": "cd exercise_1_0 && mkdir -p build && cd build && cmake ..&& make",
+      "run": "cd exercise_1_0/build && ./exercise_1_0",
+      "input": "",
+      "output": "Hello, world!",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Exercise 1.1: Turn Left",
+      "setup": "cd exercise_1_1 && mkdir -p build && cd build && cmake ..&& make",
+      "run": "cd exercise_1_1/build && ./exercise_1_1",
+      "input": "a\r\ne",
+      "output": "wheel at index 0 has speed: 0.5\r\nwheel at index 1 has speed: 1\r\nwheel at index 2 has speed: 0.5\r\nwheel at index 3 has speed: 1\r\nShutting down\r\nwheel at index 0 has speed: 0\r\nwheel at index 1 has speed: 0\r\nwheel at index 2 has speed: 0\r\nwheel at index 3 has speed: 0\r\n",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Exercise 1.1: Turn Right",
+      "setup": "cd exercise_1_1 && mkdir -p build && cd build && cmake ..&& make",
+      "run": "cd exercise_1_1/build && ./exercise_1_1",
+      "input": "d\r\ne",
+      "output": "wheel at index 0 has speed: 1\r\nwheel at index 1 has speed: 0.5\r\nwheel at index 2 has speed: 1\r\nwheel at index 3 has speed: 0.5\r\nShutting down\r\nwheel at index 0 has speed: 0\r\nwheel at index 1 has speed: 0\r\nwheel at index 2 has speed: 0\r\nwheel at index 3 has speed: 0\r\n",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Exercise 1.1: Move Forward",
+      "setup": "cd exercise_1_1 && mkdir -p build && cd build && cmake ..&& make",
+      "run": "cd exercise_1_1/build && ./exercise_1_1",
+      "input": "w\r\ne",
+      "output": "wheel at index 0 has speed: 1\r\nwheel at index 1 has speed: 1\r\nwheel at index 2 has speed: 1\r\nwheel at index 3 has speed: 1\r\nShutting down\r\nwheel at index 0 has speed: 0\r\nwheel at index 1 has speed: 0\r\nwheel at index 2 has speed: 0\r\nwheel at index 3 has speed: 0\r\n",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Exercise 1.1: Move Backward",
+      "setup": "cd exercise_1_1 && mkdir -p build && cd build && cmake ..&& make",
+      "run": "cd exercise_1_1/build && ./exercise_1_1",
+      "input": "s\r\ne",
+      "output": "wheel at index 0 has speed: -1\r\nwheel at index 1 has speed: -1\r\nwheel at index 2 has speed: -1\r\nwheel at index 3 has speed: -1\r\nShutting down\r\nwheel at index 0 has speed: 0\r\nwheel at index 1 has speed: 0\r\nwheel at index 2 has speed: 0\r\nwheel at index 3 has speed: 0\r\n\r\n",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Exercise 1.1: Invalid Input 1",
+      "setup": "cd exercise_1_1 && mkdir -p build && cd build && cmake ..&& make",
+      "run": "cd exercise_1_1/build && ./exercise_1_1",
+      "input": "z\r\ne",
+      "output": "Sorry, I didn't get that. Try again.\r\nwheel at index 0 has speed: 0\r\nwheel at index 1 has speed: 0\r\nwheel at index 2 has speed: 0\r\nwheel at index 3 has speed: 0\r\nShutting down\r\nwheel at index 0 has speed: 0\r\nwheel at index 1 has speed: 0\r\nwheel at index 2 has speed: 0\r\nwheel at index 3 has speed: 0\r\n",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Exercise 1.1: Invalid Input 2",
+      "setup": "cd exercise_1_1 && mkdir -p build && cd build && cmake ..&& make",
+      "run": "cd exercise_1_1/build && ./exercise_1_1",
+      "input": "W\r\ne",
+      "output": "Sorry, I didn't get that. Try again.\r\nwheel at index 0 has speed: 0\r\nwheel at index 1 has speed: 0\r\nwheel at index 2 has speed: 0\r\nwheel at index 3 has speed: 0\r\nShutting down\r\nwheel at index 0 has speed: 0\r\nwheel at index 1 has speed: 0\r\nwheel at index 2 has speed: 0\r\nwheel at index 3 has speed: 0\r\n",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Exercise 1.1: Shut Down",
+      "setup": "cd exercise_1_1 && mkdir -p build && cd build && cmake ..&& make",
+      "run": "cd exercise_1_1/build && ./exercise_1_1",
+      "input": "e",
+      "output": "Shutting down\r\nwheel at index 0 has speed: 0\r\nwheel at index 1 has speed: 0\r\nwheel at index 2 has speed: 0\r\nwheel at index 3 has speed: 0",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Exercise 1.2.1",
+      "setup": "cd exercise_1_2 && mkdir -p build && cd build && cmake .. && make",
+      "run": "./exercise_1_2/build/exercise_1_2_1",
+      "input": "1 2 3 4 5 e ",
+      "output": "Input List Of Numbers (end list with non-integer):\r\nOriginal Vector: 1 2 3 4 5 \r\nReversed Vector: 5 4 3 2 1\r\n",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Project 1.3: Test Case 1",
+      "setup": "cd project_1_3 && mkdir -p build && cd build && cmake .. && make",
+      "run": "./project_1_3/build/project_1_3",
+      "input": "true\r\n1,2,3,4,5,6,7\r\n2,5,6",
+      "output": "x: {1, 2, 3, 4, 5, 6, 7}\r\nw: {2, 5, 6}\r\n{17, 30, 43, 56, 69, 82, 47}",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 5
+    },
+    {
+      "name": "Project 1.3: Test Case 2",
+      "setup": "cd project_1_3 && mkdir -p build && cd build && cmake .. && make",
+      "run": "./project_1_3/build/project_1_3",
+      "input": "true\r\n1,2,3,4,5,6,7,8,9\r\n2,5,6,-1,-2",
+      "output": "x: {1, 2, 3, 4, 5, 6, 7, 8, 9}\r\nw: {2, 5, 6, -1, -2}\r\n{-2, 6, 16, 26, 36, 46, 56, 86, 108}",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 5
+    },
+    {
+      "name": "Project 1.3: Test Case 3",
+      "setup": "cd project_1_3 && mkdir -p build && cd build && cmake .. && make",
+      "run": "./project_1_3/build/project_1_3",
+      "input": "false\r\n1,2,3,4,5,6,7\r\n2,5,6",
+      "output": "x: {1, 2, 3, 4, 5, 6, 7}\r\nw: {2, 5, 6}\r\n{19, 30, 43, 56, 69, 82, 89}",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 5
+    }
+  ]
+}
