@@ -35,7 +35,6 @@ int main() {
   std::cin >> s;
   w = readInVector(s);
 
-  // TODO write your code here
   // =========== START =========
 
   // Print x vector
@@ -66,7 +65,7 @@ int main() {
       else if (!pack_with_zeros && i - buf + j < 0) {
         sum += x[0] * w[j];
       }
-      // over flow handling
+      // overflow handling
       else if (!pack_with_zeros && i - buf + j >= x.size()) {
         sum += x[x.size() -1] * w[j];
       }
@@ -75,7 +74,7 @@ int main() {
     y.push_back(sum);
   }
 
-  // Print y vector
+  // Print output vector
   std::cout << "{";
   for (int i = 0; i < y.size(); i++) {
     std::cout << y[i] << (i != (y.size()-1) ? ", " : "");
