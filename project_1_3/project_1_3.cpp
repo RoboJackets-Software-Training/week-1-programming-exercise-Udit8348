@@ -76,7 +76,7 @@ int main() {
   }
 
   // Print y vector
-  std::cout << "y: {";
+  std::cout << "{";
   for (int i = 0; i < y.size(); i++) {
     std::cout << y[i] << (i != (y.size()-1) ? ", " : "");
   }
