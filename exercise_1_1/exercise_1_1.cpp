@@ -11,7 +11,7 @@ int main() {
     // Write your code for step 2 here
     for (int i = 0; i < wheel_speeds.size(); i++){
         wheel_speeds[i] = 0;
-        std::cout << wheel_speeds[i] << std::endl;
+        //std::cout << wheel_speeds[i] << std::endl;
     }
    
     // Do not edit the next 5 lines
